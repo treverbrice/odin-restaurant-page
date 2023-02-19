@@ -1,0 +1,66 @@
+:root {
+    background-color: rgb(25, 25, 25);
+    color: beige;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    position: absolute;
+    top: 2rem;
+    right: max(calc(50vw - 75vh + 2rem), 2rem); /* calc gives us the amount of empty space beside the picture */
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.headerButton {
+    background-color: rgba(0, 0, 0, 70%);
+    border-radius: 8px;
+}
+
+.headerButton h4 {
+    margin: 0.5rem;
+}
+
+.headerButton a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    position: absolute;
+    left: calc(50% - 3rem);
+    top: 40vh;
+    background-color: rgba(0, 0, 0, 70%);
+    padding: 0.5rem;
+    text-align: center;
+    max-width: 6rem;
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin: auto;
+}
+
+main img {
+    height: 100vh;
+}
+
+footer {
+    text-align: center;
+    margin: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
