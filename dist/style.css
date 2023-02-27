@@ -59,14 +59,41 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 main h1 {
     text-align: center;
 }
 
+#centerLogo {
+    position: absolute;
+    left: calc(50% - 3rem);
+    top: 40vh;
+    background-color: rgba(0, 0, 0, 70%);
+    padding: 0.5rem;
+    text-align: center;
+    max-width: 6rem;
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin: auto;
+    font-family: fantasy;
+}
+
 main > * {
     padding: 0 0.5rem;
+}
+
+main img {
+    height: 100vh;
+}
+
+.menuItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: goldenrod;
 }
 
 ul {
@@ -78,4 +105,14 @@ li {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
+}
+
+footer {
+    text-align: center;
+    margin: 0 1rem 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
 }
