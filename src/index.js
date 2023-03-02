@@ -1,1 +1,2 @@
-console.log("hello");
+import homepage from './homepage.js';
+homepage();
