@@ -1,2 +1,7 @@
 import homepage from './homepage.js';
-homepage();
+import menu from './menu.js';
+if(document.title == "Food N\' Stuff") {
+    homepage();
+} else {
+    menu();
+}
