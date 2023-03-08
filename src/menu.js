@@ -5,12 +5,10 @@ export default function createMenu() {
     const header = document.createElement("header");
     const headerLogoButton = document.createElement("div");
     headerLogoButton.classList.add("headerLogo", "headerButton");
-    const headerLogoText = document.createElement("h4");
-    const headerLogoLink = document.createElement("a");
-    headerLogoLink.setAttribute("href", "./index.html");
+    const headerLogoLink = document.createElement("button");
+    headerLogoLink.setAttribute("id", "homeTab");
     headerLogoLink.textContent = "Food N' Stuff";
-    headerLogoText.appendChild(headerLogoLink);
-    headerLogoButton.appendChild(headerLogoText);
+    headerLogoButton.appendChild(headerLogoLink);
     header.appendChild(headerLogoButton);
 
     const headerRightSide = document.createElement("div");
@@ -19,8 +17,8 @@ export default function createMenu() {
     const headerMenuButton = document.createElement("div");
     headerMenuButton.classList.add("headerButton");
     const headerMenuText = document.createElement("h4");
-    const headerMenuLink = document.createElement("a");
-    headerMenuLink.setAttribute("href", "./menu.html");
+    const headerMenuLink = document.createElement("button");
+    headerMenuLink.setAttribute("id", "menuTab");
     headerMenuLink.textContent = "Menu";
     headerMenuText.appendChild(headerMenuLink);
     headerMenuButton.appendChild(headerMenuText);
@@ -29,8 +27,8 @@ export default function createMenu() {
     const headerContactButton = document.createElement("div");
     headerContactButton.classList.add("headerButton");
     const headerContactText = document.createElement("h4");
-    const headerContactLink = document.createElement("a");
-    headerContactLink.setAttribute("href", "./contact.html");
+    const headerContactLink = document.createElement("button");
+    headerContactLink.setAttribute("id", "contactTab");
     headerContactLink.textContent = "Contact Us";
     headerContactText.appendChild(headerContactLink);
     headerContactButton.appendChild(headerContactText);

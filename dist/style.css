@@ -26,8 +26,10 @@ header {
     font-family: fantasy;
 }
 
-.headerLogo.headerButton h4 {
+.headerLogo.headerButton button {
     margin-bottom: 0;
+    font-family: fantasy;
+    padding: 8px 6px;
 }
 
 .headerRightSide {
@@ -45,9 +47,10 @@ header {
     margin: 0.5rem;
 }
 
-.headerButton a {
-    text-decoration: none;
+.headerButton button {
     color: inherit;
+    background: none;
+    border: none;
 }
 
 main {

@@ -11,8 +11,8 @@ export default function createHomepage() {
     const headerMenuButton = document.createElement("div");
     headerMenuButton.classList.add("headerButton");
     const headerMenuText = document.createElement("h4");
-    const headerMenuLink = document.createElement("a");
-    headerMenuLink.setAttribute("href", "./menu.html");
+    const headerMenuLink = document.createElement("button");
+    headerMenuLink.setAttribute("id", "menuTab");
     headerMenuLink.textContent = "Menu";
     headerMenuText.appendChild(headerMenuLink);
     headerMenuButton.appendChild(headerMenuText);
@@ -21,8 +21,8 @@ export default function createHomepage() {
     const headerContactButton = document.createElement("div");
     headerContactButton.classList.add("headerButton");
     const headerContactText = document.createElement("h4");
-    const headerContactLink = document.createElement("a");
-    headerContactLink.setAttribute("href", "./contact.html");
+    const headerContactLink = document.createElement("button");
+    headerContactLink.setAttribute("id", "contactTab");
     headerContactLink.textContent = "Contact Us";
     headerContactText.appendChild(headerContactLink);
     headerContactButton.appendChild(headerContactText);
