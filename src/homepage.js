@@ -1,3 +1,5 @@
+import restaurantImage from "./restaurant.jpg";
+
 export default function createHomepage() {
     const content = document.querySelector("#content");
 
@@ -39,7 +41,7 @@ export default function createHomepage() {
     centerLogo.textContent = "Food N' Stuff";
     main.appendChild(centerLogo);
     const mainImage = document.createElement("img");
-    mainImage.setAttribute("src", "../src/restaurant.jpg");
+    mainImage.setAttribute("src", restaurantImage);
     main.appendChild(mainImage);
 
     content.appendChild(main);
